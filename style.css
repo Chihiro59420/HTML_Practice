@@ -1,0 +1,92 @@
+/* 1. 全域重設：讓所有元素的盒子計算包含邊框與內距 */
+* {
+    box-sizing: border-box;
+}
+
+/* 2. 設定整體網頁預設背景與文字顏色 */
+body {
+    line-height: 1.6;
+    color: #444444;
+    background-color: #f6f9e4;
+    margin: 1rem;
+    padding: 0;
+
+    body {
+        /* 優先 1: Google 雲端字型 Noto Sans TC (思源黑體) */
+        /* 優先 2: Windows 內建微
+軟正黑體 */
+        /* 優先 3: Mac / iOS 內建蘋果蘋方體 */
+        /*
+備案 4: 系統通用無襯線字型 (sans-serif) */
+        font-family: "Noto Sans TC"
+            ,
+            "Microsoft JhengHei"
+            ,
+            "PingFang TC"
+            , sans-serif;
+    }
+}
+
+/* 頁首區塊樣式 */
+header {
+    background-color: #d3c290;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+/* 導覽列超連結樣式 (後代選
+nav {
+擇器) */
+margin-top: 10px;
+}
+
+nav a {
+    color: #ecf0f1;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+/* 章節標題美化 */
+h2 {
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 8px;
+    margin-top: 30px;
+}
+
+h3 {
+    color: #34495e;
+}
+
+/* 導覽列超連結懸停效果 */
+nav a:hover {
+    color: #f1c40f;
+    /* 滑鼠移上去
+text-decoration: underline;
+變明亮金黃色 */
+}
+
+/* 主要內容章節區塊美化 */
+section {
+    background-color: #ffffff;
+    max-width: 800px;
+    /* 設定最大寬度 */
+    margin: 20px auto;
+    /* 上下外距 20px
+，
+padding: 25px; /* 內距 25px */
+    border-radius: 8px;
+    /* 圓角邊框 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /*
+輕
+左右自動置中 */
+    微陰影增添立體感 */
+}
